@@ -1,0 +1,61 @@
+<header>
+	<div class="header">
+	  <a class="logo" href="/">
+		 <img src="../assets/img/logo-mini.png" alt="">
+	  </a>
+	  <!-- <button class="nav-toggle">
+		 <fa-icon [icon]="faBars"></fa-icon>
+	  </button> -->
+	  <ul>
+		 <button class="nav-button">
+			<li>
+			  <a href="./hamburguesas">
+				 Hamburguesa
+			  </a>
+			</li>
+		 </button>
+		 <button class="nav-button">
+			<li>
+			  <a href="./perritos">
+				 Perrito
+			  </a>
+			</li>
+		 </button>
+		 <button class="nav-button">
+			<li>
+			  <a href="./alitas">
+				 Alitas
+			  </a>
+			</li>
+		 </button>
+		 <button class="nav-button">
+			<li>
+			  <a href="./papa">
+				 Papas
+			  </a>
+			</li>
+		 </button>
+	  </ul>
+	  <!-- <button class="dark-toggle">
+		 <fa-icon [icon]="faMoon"></fa-icon>
+	  </button>
+	  <button class="dark-toggle-2">
+		 <fa-icon [icon]="faSun"></fa-icon>
+	  </button> -->
+	</div>
+ </header>
+
+<section>
+	<main>
+		<div class="container-cards" *ngFor="let alita of alitas">
+			<div class="img-inner">
+				<h2 >{{alita.title}}</h2>
+				<p>{{alita.description}}</p>
+			</div>
+			<!-- <div class="img-inner-2">
+			</div> -->
+			<img src="{{alita.image}}" alt="">
+			<p class="precio">{{alita.price}}</p>
+		</div>
+	</main>
+</section>

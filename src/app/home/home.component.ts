@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-// import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit } from '@angular/core';
 // import { faMoon } from '@fortawesome/free-solid-svg-icons';
 // import { faSun } from '@fortawesome/free-solid-svg-icons';
 // import { faBurger } from '@fortawesome/free-solid-svg-icons';
@@ -11,10 +10,20 @@ import { Wings } from 'src/modelos/Wings';
 import { Hamburger } from 'src/modelos/Hamburger';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
+
+export class HomeComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+
 export class AppComponent {
   title = 'final-project';
   // faBars = faBars;
